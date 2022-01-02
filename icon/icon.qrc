@@ -1,9 +1,0 @@
-<RCC>
-  <qresource prefix="icon">
-    <file>edit.png</file>
-    <file>icons8-note-100.png</file>
-    <file>logout.png</file>
-    <file>print.png</file>
-    <file>save.png</file>
-  </qresource>
-</RCC>
