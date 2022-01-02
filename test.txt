@@ -1,0 +1,15 @@
+======================
+1일차_수정
+----------------------
+2023-1-4
+----------------------
+import sys
+from PyQt5.QtCore import QDate, Qt
+from PyQt5.QtGui import QIcon, QPainter
+from PyQt5.QtWidgets import *
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    ex = MyApp()
+    sys.exit(app.exec_())
+======================
