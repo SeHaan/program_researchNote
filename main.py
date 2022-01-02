@@ -70,15 +70,15 @@ class MyApp(QMainWindow):
         self.setCentralWidget(wg) # Memo 위젯을 centralWidget으로 설정
         
         # Action 모음 #
-        openAction = QAction(QIcon("icon/share.png"), 'Open', self) # 파일 열기
-        saveAction = QAction(QIcon("icon/save.png"), 'Save', self) # 파일 저장
-        printAction = QAction(QIcon("icon/print.png"), 'Print', self) # 파일 인쇄(사진으로)
-        fontAction = QAction(QIcon("icon/font-size.png"), 'Font', self) # 폰트 설정
-        exitAction = QAction(QIcon("icon/logout.png"), 'Exit', self) # 나가기
-        titleColor = QAction(QIcon("icon/title.png"), 'Title', self) # 타이틀 배경색 설정
-        dateColor = QAction(QIcon("icon/calendar.png"), 'Date', self) # 날짜 배경색 설정
-        noteColor = QAction(QIcon("icon/note.png"), 'Note', self) # 노트 배경색 설정
-        helpAction = QAction(QIcon("icon/link.png"), 'Help', self) # 도움말
+        openAction = QAction(QIcon("../icon/share.png"), 'Open', self) # 파일 열기
+        saveAction = QAction(QIcon("../icon/save.png"), 'Save', self) # 파일 저장
+        printAction = QAction(QIcon("../icon/print.png"), 'Print', self) # 파일 인쇄(사진으로)
+        fontAction = QAction(QIcon("../icon/font-size.png"), 'Font', self) # 폰트 설정
+        exitAction = QAction(QIcon("../icon/logout.png"), 'Exit', self) # 나가기
+        titleColor = QAction(QIcon("../icon/title.png"), 'Title', self) # 타이틀 배경색 설정
+        dateColor = QAction(QIcon("../icon/calendar.png"), 'Date', self) # 날짜 배경색 설정
+        noteColor = QAction(QIcon("../icon/note.png"), 'Note', self) # 노트 배경색 설정
+        helpAction = QAction(QIcon("../icon/link.png"), 'Help', self) # 도움말
 
         # 파일 열기 설정
         openAction.setShortcut('Ctrl+O')
@@ -162,7 +162,7 @@ class MyApp(QMainWindow):
         # 윈도우 #
         self.statusBar().showMessage(self.date.toString(Qt.DefaultLocaleLongDate))
         self.setWindowTitle("Research Note for Minami")
-        self.setWindowIcon(QIcon("icon/icons8-note-100.png"))
+        self.setWindowIcon(QIcon("../icon/icons8-note-100.png"))
         self.resize(800, 800)
         self.center()
         self.show()
